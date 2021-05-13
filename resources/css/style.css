@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Raleway"),
+       url("/recources/fonts/Raleway-Regular.ttf") format("ttf");
+}
+
+
+
+font-family: 'Raleway', sans-serif;
+
+body, h1 {
+  font-family: "Raleway", "Arial", sans-serif;
+}
+
+.text-16{
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.text-18{
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.text-28{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+
+.text-100{
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 117px;
+}
+
+
+
+.mt-90{
+  margin-top: 90px;
+}
+
+.mb-90{
+  margin-bottom: 90px;
+}
+
+.mt-50{
+  margin-top: 50px;
+}
+
+.mb-50{
+  margin-bottom: 50px;
+}
+
+.mt-40{
+  margin-top: 40px;
+}
+
+.mb-40{
+  margin-bottom: 40px;
+}
+
+
+
+.pt-100{
+  padding-top: 100px;
+
+}
+
+.pb-100{
+  padding-bottom: 100px;
+}
+
+
+
+
+.main-head{
+  background-image: url('/resources/img/back-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center right;
+
+}
+
+
+
+
+button.btn-yellow{
+  background-color: #FFCA00;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  padding: 15px 35px;
+  border: 0px;
+}
+
+button.btn-yellow:hover{
+  background: #000000;
+  color: #FFFFFF;
+}
+
+button.btn-black{
+  background-color: #000000;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 15px 35px;
+  border: 0px;
+}
+
+button.btn-yellow:hover{
+  background: #FFCA00;
+  color: #000000;
+}
+
+
+.grad-white{
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 80%, rgba(255,255,255,0) 100%);
+  padding-top: 130px;
+  padding-bottom: 100px;
+
+}
+
+
+
+.hello h2{
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.hello p{
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+
+
+  color: #000000;
+}
+
+
+
+.text-yellow{
+  color: #FFCA00;
+}
+
+.white-head-cta{
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 54px;
+
+
+  color: #FFFFFF;
+}
+
+.white-text-cta{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+
+
+  color: #E5E5E5;
+}
+
+
+.cta-wrapper{
+  background-image: url('/resources/img/back-clack.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+
+
+.cat-card-left{
+  padding: 30px;
+  background-color: #EFF1F2;
+}
+
+
+.max-price{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  margin: 20px 0px 20px 0px;
+}
+
+.sub-cat{
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.cat-name{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+
+.cat-img{
+  object-fit: cover;
+  height: 100%;
+}
+
+/*HEADER*/
+
+.site-name{
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.header-wrapper{
+  background: #0D0B0B;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding:  15px 0px;
+/*  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+  z-index: 999;*/
+
+}
+
+.text-white{
+  color:#ffffff;
+}
