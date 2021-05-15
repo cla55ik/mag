@@ -14,3 +14,5 @@ $cat = new Category($db);
 
 
 $alltest = $cat->getAll();
+
+$database->closeConnect();

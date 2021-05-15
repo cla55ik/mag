@@ -22,13 +22,9 @@ class Category{
 
 public function getAll()
 {
-  
-  $query = "SELECT * FROM category";
-
-  $stmt = $this->conn->query("SELECT * FROM category");
-
+  $query = "SELECT * FROM " . $this->table_name;
+  $stmt = $this->conn->query($query);
   $array_cat = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 
   return $array_cat;
 }

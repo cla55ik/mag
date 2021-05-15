@@ -74,6 +74,14 @@ body, h1 {
   padding-bottom: 100px;
 }
 
+.pt-90{
+  padding-top: 90px;
+}
+
+.pb-90{
+  padding-bottom: 90px;
+}
+
 
 
 
@@ -224,7 +232,7 @@ button.btn-yellow:hover{
 .header-wrapper{
   background: #0D0B0B;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding:  15px 0px;
+  padding:  5px 0px;
 /*  position: fixed;
   width: 100%;
   top:0;
@@ -235,4 +243,153 @@ button.btn-yellow:hover{
 
 .text-white{
   color:#ffffff;
+}
+
+
+
+
+a.nav-item.nav-link{
+  color: #ffffff;
+}
+
+
+a.nav-item.nav-link:hover{
+  color: #EFF1F2;
+  text-decoration: underline;
+}
+
+
+
+.nav-logo a:hover{
+  text-decoration: none;
+}
+
+
+.header-phone, .header-cta-btn {
+  text-align: right;
+}
+
+.header-phone{
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.header-cta-btn{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.header-phone a:hover{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-cta-btn a:hover{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
+.light-gray{
+  background-color: #EFF1F2;
+
+}
+
+
+/*CAROUSEL*/
+
+.item img {
+  min-width: 375px;
+  min-height: 240px;
+
+}
+
+.scale {
+   transition: 1s; /* Время эффекта */
+  }
+  .scale:hover {
+   transform: scale(1.2); /* Увеличиваем масштаб */
+   z-index: 5 !important;
+  }
+
+.item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+
+
+
+
+/*Гарантия*/
+
+
+.garant-10{
+  font-weight: 500;
+  font-size: 150px;
+  line-height: 176px;
+}
+
+.garant-year{
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 54px;
+}
+
+
+.garant-wrapper{
+  background-image: url('/resources/img/back-clack.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 5;
+}
+
+
+.advantages{
+
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+
+
+
+.white{
+  background: #ffffff;
+}
+
+
+.features{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 40px 80px 150px 50px;
+}
+
+.features h2{
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 30px;
+}
+
+.features p{
+  margin-bottom: 30px;
+}
+
+
+.akciya{
+  padding: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
