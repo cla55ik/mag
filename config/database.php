@@ -17,7 +17,7 @@ class my_DB {
     } catch(PDOException $exception) {
       echo "Ошибка соединения: " . $exception->getMessage();
     }
-    echo ('Соединение установлено');
+  //  echo ('Соединение установлено');
     return $this->conn;
 
   }
@@ -25,7 +25,7 @@ class my_DB {
   public function closeConnect(){
     $this->conn = null;
     return $this->conn;
-    echo "Соедининие закрыто";
+    //echo "Соедининие закрыто";
   }
 
 

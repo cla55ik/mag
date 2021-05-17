@@ -15,6 +15,12 @@
 
     }
 
+    public function getPrimary(){
+      $query = "SELECT max(id) FROM " . $this->table_name;
+      $stmt = $this->conn->query($query);
+      $max = $stmt->fetch();
+    }
+
     public function getAll()
     {
       $query = "SELECT * FROM " . $this->table_name;
@@ -34,6 +40,8 @@
       $array_material = $stmt->fetchAll();
       return $array_material;
     }
+
+
 
 
   };

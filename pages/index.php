@@ -54,10 +54,7 @@
 
       <div class="tabs-content" id="tab<?=$cat_id;?>">
         <?php foreach ($materials_from_cat as $mat): ?>
-          <span>  cat_id = <?= $mat['cat_id'];?></span>
-          <span>  name = <?= $mat['name'];?></span>
-          <span> id =  <?= $mat['id'];?></span>
-
+          <span> <img class="img-fluid img-material" src="/resources/img/<?=$mat['img'];?>.jpg" alt=""> </span>
         <?php endforeach; ?>
       </div>
 
