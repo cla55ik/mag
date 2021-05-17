@@ -59,7 +59,6 @@
       </div>
 
 <!-- Список категорий -->
-
       <?php include_once($_SERVER['DOCUMENT_ROOT']. "/controller/categoryController.php"); ?>
 
       <div class="container mb-90">

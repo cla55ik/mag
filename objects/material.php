@@ -4,7 +4,13 @@
     private $conn;
     private $table_name = "materials";
 
-    public function __constract($db){
+    public $id;
+    public $cat_id;
+    public $name;
+    public $img;
+
+
+    public function __construct($db){
       $this->conn = $db;
 
     }
