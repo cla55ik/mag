@@ -1,6 +1,7 @@
 <?php
 include_once($_SERVER['DOCUMENT_ROOT']. "/layouts/header.php");
 include_once($_SERVER['DOCUMENT_ROOT']. "/controller/materialController.php");
+//include_once($_SERVER['DOCUMENT_ROOT']. "/templates/crudModal.php");
 
 if(isset($_GET['status'])){
   $status = $_GET['status'];
@@ -45,7 +46,11 @@ if(isset($_GET['status'])){
                 <th><?=$mat['cat_id'];?></th>
                 <th><?=$mat['name'];?></th>
                 <th><?=$mat['img'];?></th>
-                <th>Coming soon</th>
+                <th>
+                  <a href="?edit=<?=$mat['id'] ?>" class="btn btn-success btn-sm" data-toggle="modal" data-target="#editModal<?=$mat['id'] ?>"><i class="fa fa-edit"></i></a>
+                  <a href="?delete=<?=$mat['id'] ?>" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal<?=$mat['id'] ?>"><i class="fa fa-trash"></i></a>
+                  <?php require($_SERVER['DOCUMENT_ROOT']. "/templates/crudModal.php"); ?>
+                </th>
               </tr>
             <?php endforeach; ?>
         </tbody>
@@ -54,6 +59,7 @@ if(isset($_GET['status'])){
 
   </div>
 
+<!-- CREATE MATERIAL -->
   <div class="modal fade" id="modalCreate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -74,13 +80,16 @@ if(isset($_GET['status'])){
             <div class="form-group">
               <input type="text" class="form-control" name="img" value="" placeholder="Картинка"/>
             </div>
-            <button type="submit" name="submit" class="btn btn-primary">Добавить</button>
+            <button type="submit" name="create_submit" class="btn btn-primary">Добавить</button>
           </form>
         </div>
 
       </div>
     </div>
   </div>
+
+
+
 
 </div>
 

@@ -10,7 +10,7 @@ $database = new my_DB();
 $db = $database->getConnect();
 
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['create_submit'])) {
   $max_arr = $db->query("SELECT max(id) FROM materials");
   $max = $max_arr->fetchColumn();
   $max_id = $max +1;
@@ -19,7 +19,17 @@ if (isset($_POST['submit'])) {
 	$query = $db->prepare($sql);
 	$query->execute([$max_id ,$name, $cat_id, $img]);
 
-header('Location: /crud/?status=success');
-}else{
-	header('Location: /crud/?status=error');
+	header('Location: /crud/?status=success');
+	exit;
+}elseif (isset($_POST['delete_submit'])) {
+	$get_id = $_GET['id'];
+
+	$sql = "DELETE FROM materials WHERE id=:id";
+
+	$query = $db->prepare($sql);
+	$query->bindParam(':id', $get_id);
+	$query->execute();
+
+	header('Location: /crud/?status=success');
+	exit;
 }
