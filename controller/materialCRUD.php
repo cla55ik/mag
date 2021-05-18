@@ -11,13 +11,11 @@ $db = $database->getConnect();
 
 
 if (isset($_POST['create_submit'])) {
-  $max_arr = $db->query("SELECT max(id) FROM materials");
-  $max = $max_arr->fetchColumn();
-  $max_id = $max +1;
 
-	$sql = ("INSERT INTO materials (id, name, cat_id, img) VALUES(?,?,?,?)");
+
+	$sql = ("INSERT INTO materials (name, cat_id, img) VALUES(?,?,?)");
 	$query = $db->prepare($sql);
-	$query->execute([$max_id ,$name, $cat_id, $img]);
+	$query->execute([$name, $cat_id, $img]);
 
 	header('Location: /crud/?status=success');
 	exit;
