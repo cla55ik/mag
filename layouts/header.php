@@ -55,7 +55,7 @@
               <a class="text-yellow" href="tel:+74732052626">+7 473 205 26 26</a>
             </div>
               <div class="header-cta-btn">
-                <a class="text-yellow" href="#">заказать звонок</a>
+                <a class="text-yellow" href="#" id="btn_popup" onclick="headerPopup()">заказать звонок</a>
               </div>
           </div>
         </nav>

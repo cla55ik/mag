@@ -4,13 +4,13 @@
 
 $(document).ready(function(){
 
-  alert("aaa");
+
         $('#cta-form').submit(function(event){
-          alert("ssss");
+
           event.preventDefault();
           // собираем данные с формы
           var phone = $('#phone').val();
-          alert(phone);
+          
           // отправляем данные
          $.ajax({
               url: "/resources/mail.php", // куда отправляем
@@ -26,3 +26,19 @@ $(document).ready(function(){
           });
       });
   });
+
+
+
+
+  function headerPopup(){
+
+    document.getElementById('header-popup').classList.remove('hide');
+    document.getElementById('header-popup').classList.add('popup-visible');
+
+
+  }
+
+  function popupClose(){
+    document.getElementById('header-popup').classList.remove('popup-visible');
+    document.getElementById('header-popup').classList.add('hide');
+  }
