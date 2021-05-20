@@ -23,41 +23,13 @@
     <link type="image/x-icon" rel="shortcut icon" href="/resources/img/favicon.svg">
     <title><?=$page_title;?></title>
 
+  
 
 
   </head>
 
   <body>
 
-    <header>
-      <div class="row header-wrapper fixed-top">
-        <nav class=" navbar navbar-expand-lg container">
-          <div class="col-lg-3 nav-logo">
-            <a href="/">
-              <div class="text-yellow text-uppercase site-name">
-                маг
-              </div>
-              <div class="text-yellow text-capitalize text-18">
-                Мебельная Мануфактура
-              </div>
-            </a>
-          </div>
-          <div class="collapse navbar-collapse col-lg-6 text-white d-flex justify-content-center" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Каталог<span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#">О нас</a>
-              <a class="nav-item nav-link" href="#">Рассчет</a>
-              <a class="nav-item nav-link" href="#">Контакты</a>
-            </div>
-          </div>
-          <div class="col-lg-3 text-yellow">
-            <div class="header-phone">
-              <a class="text-yellow" href="tel:+74732052626">+7 473 205 26 26</a>
-            </div>
-              <div class="header-cta-btn">
-                <a class="text-yellow" href="#">заказать звонок</a>
-              </div>
-          </div>
-        </nav>
-      </div>
-    </header>
+  <div class="row">
+    FDA
+  </div>

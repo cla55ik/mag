@@ -458,3 +458,54 @@ img.img-fluid.img-material {
 .grid{
   display: grid;
 }
+
+
+
+/*FORM CTA*/
+.cta-form input[type="submit"]{
+  background-color: #FFCA00;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 13px 35px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.cta-form input[type="submit"]:hover{
+  background-color: #FFCA00;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 13px 35px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+
+}
+
+
+
+.cta-form input[type="text"]{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 13px 20px;
+  color: #ffffff;
+
+}
+
+.cta-form input[type="text"]:active{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 13px 20px;
+  color: #ffffff;
+}

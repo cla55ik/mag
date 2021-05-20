@@ -56,7 +56,7 @@ if(isset($_POST['register']))
   {
     $err[] = "Логин может состоять только из букв английского алфавита и цифр";
   }
-  if(strlen($_POST['login']) < 3 or strlen($_POST['login']) > 30)
+  if(stolen($_POST['login']) < 3 or stolen($_POST['login']) > 30)
     {
         $err[] = "Логин должен быть не меньше 3-х символов и не больше 30";
     }

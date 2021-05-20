@@ -39,14 +39,14 @@
                         </div>
                   </div>
                   <div class="col-lg-7">
-                        <img src="../resources/img/man.png" alt="">
+                        <img src="../resources/img/man.png" alt="" loading="lazy">
                   </div>
             </div>
       </div>
 
 <!-- CTA секция-->
       <div class="row cta-wrapper pt-100 pb-100">
-            <div class="container">
+            <div class="container d-flex flex-wrap">
                   <div class="col-lg-6">
                         <div class="white-head-cta text-uppercase">
                               ДАВАЙТЕ СОЗВОНИМСЯ
@@ -54,6 +54,9 @@
                         <div class="white-text-cta text-uppercase">
                               <span>и я расскажу</span><span class="text-yellow"> ПОДРОБНЕЕ</span>
                         </div>
+                  </div>
+                  <div class="col-lg-6  d-flex flex-wrap align-items-center justify-content-end">
+                        <?php include_once($_SERVER['DOCUMENT_ROOT']. "/templates/formCTA.php"); ?>
                   </div>
             </div>
       </div>
@@ -83,7 +86,7 @@
                                     <button class="text-uppercase btn-yellow" type="button" name="gotocat" href="<?=$category['$cat_url'];?>">Подробнее</button>
                               </div>
                               <div class="col-lg-9 p-0">
-                                    <img class="img-fluid cat-img" src="/resources/img/<?=$category['cat_img'];?>.jpg" alt="">
+                                    <img class="img-fluid cat-img" src="/resources/img/<?=$category['cat_img'];?>.jpg" alt="" loading="lazy">
                               </div>
                         </div>
 
@@ -99,7 +102,7 @@
 
             <div class="owl-carousel owl-theme">
                   <?php for ($i=1; $i < 21; $i++) :?>
-                        <div class="item"> <img src="/resources/img/carousel/<?=$i;?>-min.jpg" alt="" class="scale"> </div>
+                        <div class="item"> <img src="/resources/img/carousel/<?=$i;?>-min.jpg" alt="" loading="lazy" class="scale"> </div>
                   <?php endfor; ?>
 
             </div>
@@ -110,12 +113,12 @@
       <div class="container">
             <div class="row">
                   <div class="col-lg-7 mt-50">
-                        <img src="/resources/img/man-doc.jpg" alt="">
+                        <img src="/resources/img/man-doc.jpg" alt="" loading="lazy">
                   </div>
                   <div class="col-lg-5 d-flex flex-wrap align-content-end">
                         <h2 class="mb-40">ОФИЦИАЛЬНЫЙ ДОГОВОР</h2>
                         <p class="mb-90 text-18">На нашем производстве мы готовы произвести мебель для любых потребностей как для частных домов и квартир, так и для помещений коммерческого использования.</p>
-                        <div class="d-flex justify-content-end w-100"><img src="/resources/img/pechat.png" alt=""></div>
+                        <div class="d-flex justify-content-end w-100"><img src="/resources/img/pechat.png" alt="" loading="lazy"></div>
                   </div>
             </div>
       </div>
@@ -196,41 +199,14 @@
                               <p>при заказе в мае</p>
                         </div>
 
-                        <img class="img-fluid" src="/resources/img/akciya.jpg" alt="">
+                        <img class="img-fluid" src="/resources/img/akciya.jpg" alt="" loading="lazy">
                   </div>
             </div>
       </div>
       <!-- Партнеры -->
 
 
-      <div class="row">
-            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Запустить модальное окно
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-      </div>
+      
 
       <!-- CTA -->
 

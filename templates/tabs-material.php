@@ -36,7 +36,7 @@
       <div class="tabs-content" id="tab<?=$cat_id;?>">
         <?php foreach ($materials_from_cat as $mat): ?>
           <div class="card-material">
-            <span> <img class="img-fluid img-material" src="/resources/img/<?=$mat['img'];?>.jpg" alt=""> </span>
+            <span> <img class="img-fluid img-material" src="/resources/img/<?=$mat['img'];?>.jpg" alt="" loading="lazy"> </span>
             <div class="text-uppercase ml-3 w-100 material-title font-weight-bold"><?=$mat['name'];?></div>
           </div>
 
