@@ -1,4 +1,7 @@
 <?php
+    include_once($_SERVER['DOCUMENT_ROOT']. "/controller/leadsController.php");
+
+
     $msg_box = ""; // в этой переменной будем хранить сообщения формы
     $errors = array(); // контейнер для ошибок
     $phone = $_POST['phone'];
@@ -13,6 +16,7 @@
 
     // если форма без ошибок
     if(empty($errors)){
+        $leads->leadCreate($phone);
         // собираем данные из формы
         $message  = "Номер телефона: " . $_POST['phone'] . "<br/>";
         send_mail($message); // отправим письмо

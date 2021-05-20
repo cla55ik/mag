@@ -11,13 +11,13 @@
       <div class="modal-body">
         <form action="?id=<?=$mat['id'] ?>" method="post">
         	<div class="form-group">
-        		<input type="text" class="form-control" name="edit_name" mat="<?=$mat['name'] ?>" placeholder="Имя">
+        		<input type="text" class="form-control" name="edit_name" mat="<?=$mat['name'] ?>" placeholder="Название">
         	</div>
         	<div class="form-group">
-        		<input type="text" class="form-control" name="edit_last_name" mat="<?=$mat['last_name'] ?>" placeholder="Фамилия">
+        		<input type="text" class="form-control" name="edit_last_name" mat="<?=$mat['cat_id'] ?>" placeholder="Категория">
         	</div>
         	<div class="form-group">
-        		<input type="text" class="form-control" name="edit_pos" mat="<?=$mat['pos'] ?>" placeholder="Должность">
+        		<input type="text" class="form-control" name="edit_pos" mat="<?=$mat['img'] ?>" placeholder="Картинка">
         	</div>
         	<div class="modal-footer">
         		<button type="submit" name="edit-submit" class="btn btn-primary">Обновить</button>
