@@ -19,7 +19,7 @@ if (isset($_POST['create_submit'])) {
 	$query = $db->prepare($sql);
 	$query->execute([$name, $cat_id, $img, $description]);
 
-	header('Location: /crud/?status=success');
+	header('Location: /crud/material.php/?status=success');
 	exit;
 }elseif (isset($_POST['delete_submit'])) {
 	$get_id = $_GET['id'];
@@ -30,7 +30,7 @@ if (isset($_POST['create_submit'])) {
 	$query->bindParam(':id', $get_id);
 	$query->execute();
 
-	header('Location: /crud/?status=success');
+	header('Location: /crud/material.php/?status=success');
 	exit;
 }elseif(isset($_POST['update_submit'])){
 	$post_id = $_GET['id'];
@@ -38,6 +38,6 @@ if (isset($_POST['create_submit'])) {
 	$query = $db->prepare($sql);
 	$query->execute([$name, $cat_id, $img, $description, $post_id]);
 
-	header('Location: /crud/?status=success');
+	header('Location: /crud/material.php/?status=success');
 	exit;
 }
