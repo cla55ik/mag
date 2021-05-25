@@ -83,8 +83,14 @@ if(isset($_GET['status'])){
             <div class="form-group">
               <input type="textarea" class="form-control" name="text" value="" placeholder="Текст отзыва"/>
             </div>
+            
             <div class="form-group">
-              <input type="number" class="form-control" name="type" value="" placeholder="Тип изделия"/>
+              <select class="form-select" name="type" aria-label="Пример выбора по умолчанию">
+                <option selected>Тип изделий</option>
+                <option value="1">Диван</option>
+                <option value="2">Кухня</option>
+                <option value="3">Шкаф-купе</option>
+              </select>
             </div>
             <div class="form-group">
               <input type="number" class="form-control" name="price" value="" placeholder="Стоимость"/>

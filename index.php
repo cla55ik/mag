@@ -164,7 +164,34 @@
 
 
       <!-- Отзывы -->
+      <?php include_once($_SERVER['DOCUMENT_ROOT']. "/controller/reviewController.php"); ?>
+      <div class="container mt-90 mb-90">
+            <h2 class="mb-70">ОТЗЫВЫ КЛИЕНТОВ</h2>
+        <?php foreach ($all_review as $review): ?>
+          <div class="col-lg-10 review-card d-flex mb-40">
+            <div class="col-lg-3 review-img">
+              <img class="img-fluid review-img" src="/resources/img/review/<?=$review['img'];?>.jpg" alt="">
+            </div>
+            <div class="col-lg-9 review-body">
+              <div class="">
+                <h3 class="text-18"><?=$review['name'];  ?></h3>
+                <p class="text-16-24"><?= $review['text']; ?></p>
+              </div>
+              <div class="d-flex">
+                <div class="review-type">
+                  <span></span>
+                  <span><?=$review['type'];  ?></span>
+                </div>
+                <div class="review-price text-18 font-weight-bold">
+                  <?=$review['price']; ?>  ₽
+                </div>
+              </div>
 
+            </div>
+          </div>
+        <?php endforeach; ?>
+
+      </div>
       <!-- Особенности изготовления -->
       <div class="row pt-100 pb-100 light-gray">
             <div class="container d-flex flex-wrap justify-content-between">
@@ -206,7 +233,7 @@
       <!-- Партнеры -->
 
 
-      
+
 
       <!-- CTA -->
 

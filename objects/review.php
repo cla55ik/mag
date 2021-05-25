@@ -10,10 +10,17 @@ class Review {
     $this->conn = $db;
   }
 
+
+
   public function getAll(){
     $sql = "SELECT * FROM " . $this->table_name;
     $stmt = $this->conn->query($sql);
     $all_reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    foreach ($all_reviews as $review) {
+      getType($review['type']);
+      $this->type = $type;
+    }
 
     return $all_reviews;
   }
@@ -56,6 +63,21 @@ class Review {
   	$query->execute();
   }
 
+  private function getType($type)
+  {
+    switch ($type) {
+      case 1:
+        $type = "Диван";
+        break;
+      case 2:
+        $type = "Кухня";
+        break;
+      case 3:
+        $type = "Шкаф-купе";
+        break;
+    }
+    return $type;
+  }
 
 
 
