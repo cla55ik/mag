@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script type="text/javascript" src="vue.vue"></script>
+    <title></title>
+  </head>
+  <style media="screen">
+    .active{
+      background-color: green;
+      font-size: 24px;
+    }
+    .disabled{
+      color: #adadad;
+    }
+
+  </style>
+  <body>
+    <div class="container" id="app">
+      {{ message }}
+
+      <template v-if="count == 1">
+        <h1>Значение count = 1</h1>
+        <p>This is description for count = 1</p>
+      </template>
+      <template v-else-if="count == 3">
+        <h1>Значение count = 2</h1>
+        <p>This is description for count = 2</p>
+      </template>
+      <template v-else>
+        <h1>Значение count = {{ count }}</h1>
+        <p>This is description for count = {{ count }}</p>
+        <p v-show="status > 10"> V-show </p>
+        <p :class="[isActive ? 'active' : 'disabled']">paragraph after V-show </p>
+      </template>
+      <div class="">
+        <button type="button" name="button" @click="changeIsActive()">{{ btnStatus }}</button>
+      </div>
+      <div class="" >
+        <table class="table table-dark">
+          <thead>
+            <th>ID</th>
+            <th>Name</th>
+          </thead>
+          <tbody>
+            <tr v-for="mebel in mebels">
+              <td>{{ mebel.id }}</td>
+              <td>{{ mebel.name }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="">
+        <h2>{{textSearch}} (длина текста: {{ textSearch.length }})</h2>
+        <input type="text" v-model="textSearch">
+      </div>
+
+    </div>
+
+
+    <script type="text/javascript">
+    var app = new Vue({
+      el: '#app',
+      data:{
+        message: 'Hello1',
+        count: 10,
+        status: 1,
+        isActive: false,
+        btnStatus: 'not active',
+        textSearch:'',
+        mebels:[
+          {id: 1, name: 'Диван'},
+          {id: 2, name: 'Шкаф'},
+          {id: 3, name: 'Кухня'},
+          {id: 4, name: 'Шкаф'},
+        ]
+      },
+      watch:{
+        textSearch: function() {
+          if(this.textSearch.length > 10){
+            this.textSearch = 'Текст более 10 символов';
+          }
+        }
+      },
+      methods:{
+        changeIsActive(){
+          if(this.isActive){
+              this.isActive = false;
+              this.btnStatus = 'not active';
+          }else{
+              this.isActive = true;
+              this.btnStatus = 'active';
+          }
+
+        },
+
+      }
+
+
+    })
+    </script>
+
+
+  </body>
+</html>

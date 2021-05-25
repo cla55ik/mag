@@ -9,18 +9,21 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="?id=<?=$mat['id'] ?>" method="post">
+        <form action="/controller/materialCRUD.php?id=<?=$mat['id'] ?>" method="post">
         	<div class="form-group">
-        		<input type="text" class="form-control" name="edit_name" mat="<?=$mat['name'] ?>" placeholder="Название">
+        		<input type="text" class="form-control" name="name" mat="<?=$mat['name'] ?>" placeholder="Название">
         	</div>
         	<div class="form-group">
-        		<input type="text" class="form-control" name="edit_last_name" mat="<?=$mat['cat_id'] ?>" placeholder="Категория">
+        		<input type="number" class="form-control" name="cat_id" mat="<?=$mat['cat_id'] ?>" placeholder="Категория">
         	</div>
         	<div class="form-group">
-        		<input type="text" class="form-control" name="edit_pos" mat="<?=$mat['img'] ?>" placeholder="Картинка">
+        		<input type="text" class="form-control" name="img" mat="<?=$mat['img'] ?>" placeholder="Картинка">
+        	</div>
+          <div class="form-group">
+        		<input type="textarea" class="form-control" name="description" mat="<?=$mat['description'] ?>" placeholder="Описание">
         	</div>
         	<div class="modal-footer">
-        		<button type="submit" name="edit-submit" class="btn btn-primary">Обновить</button>
+        		<button type="submit" name="update_submit" class="btn btn-primary">Обновить</button>
         	</div>
         </form>
       </div>

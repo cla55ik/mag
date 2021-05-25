@@ -44,7 +44,7 @@
           </div>
           <div class="collapse navbar-collapse col-lg-6 text-white d-flex justify-content-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Каталог<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link active" href=" ">Каталог<span class="sr-only">(current)</span></a>
               <a class="nav-item nav-link" href="#">О нас</a>
               <a class="nav-item nav-link" href="#">Рассчет</a>
               <a class="nav-item nav-link" href="#">Контакты</a>

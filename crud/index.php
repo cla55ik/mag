@@ -80,6 +80,9 @@ if(isset($_GET['status'])){
             <div class="form-group">
               <input type="text" class="form-control" name="img" value="" placeholder="Картинка"/>
             </div>
+            <div class="form-group">
+              <input type="textarea" class="form-control" name="description" value="" placeholder="Описание"/>
+            </div>
             <button type="submit" name="create_submit" class="btn btn-primary">Добавить</button>
           </form>
         </div>

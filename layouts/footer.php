@@ -1,9 +1,31 @@
 
 
 
-    <footer>
-      <div class="">
-        FOOETER
+    <footer id="footer">
+      <div class="row header-wrapper">
+        <nav class=" navbar navbar-expand-lg container">
+          <div class="col-lg-3 nav-logo">
+            <a href="/">
+              <div class="text-yellow text-uppercase site-name">
+                маг
+              </div>
+              <div class="text-yellow text-capitalize text-18">
+                Мебельная Мануфактура
+              </div>
+            </a>
+          </div>
+          <div class="">
+
+          </div>
+          <div class="col-lg-9 text-yellow">
+            <div class="header-phone">
+              <a class="text-yellow" href="tel:+74732052626">+7 473 205 26 26</a>
+            </div>
+              <div class="header-cta-btn">
+                <a class="text-yellow" href="#footer" id="btn_popup" onclick="headerPopup()">заказать звонок</a>
+              </div>
+          </div>
+        </nav>
       </div>
 
 
