@@ -33,7 +33,7 @@
       <div class="row header-wrapper fixed-top">
         <nav class=" navbar navbar-expand-lg container">
 
-          <div class="col-lg-3 col-sm-12 nav-logo">
+          <div class="col-lg-3 col-9 nav-logo">
             <a href="/">
               <div class="text-yellow text-uppercase site-name">
                 маг
@@ -51,13 +51,17 @@
               <a class="nav-item nav-link" href="#">Контакты</a>
             </div>
           </div>
-          <div class="col-lg-3 text-yellow">
+          <div class="d-none d-lg-block col-lg-3 text-yellow">
             <div class="header-phone">
               <a class="text-yellow" href="tel:+74732052626">+7 473 205 26 26</a>
             </div>
               <div class="header-cta-btn">
                 <a class="text-yellow" href="#" id="btn_popup" onclick="headerPopup()">заказать звонок</a>
               </div>
+
+          </div>
+          <div class="col-3 d-block d-lg-none">
+            <a href="tel:+79102814760"><img src="/resources/img/phone.svg" alt="позвонить"></a>
           </div>
         </nav>
       </div>

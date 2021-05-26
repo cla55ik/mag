@@ -14,7 +14,7 @@
                         </div>
                         <div class="d-flex mt-40">
 
-                              <button type="button" name="button" class="btn btn-yellow mr-5" onclick="headerPopup()">ПОДРОБНЕЕ</button>
+                              <button type="button" name="button" class="btn btn-yellow mr-lg-5" onclick="headerPopup()">ПОДРОБНЕЕ</button>
                               <button type="button" name="button" class="btn-black">КАТАЛОГ</button>
                         </div>
                   </div>
@@ -77,7 +77,7 @@
 
 
                   <?php foreach ($alltest as $category): ?>
-                        <div class="row mb-50">
+                        <div class="row mb-50 m-reverse">
                               <div class="col-lg-3 cat-card-left align-items-center">
                                     <h3 class="text-uppercase cat-name"><?=$category['cat_name'];?></h3>
                                     <div class="sub-cat"><?=$category['sub_1'];?></div>
@@ -112,14 +112,14 @@
 
       <!-- Официальный договор -->
       <div class="container">
-            <div class="row">
-                  <div class="col-lg-7 mt-50">
+            <div class="row m-reverse">
+                  <div class="col-lg-7 mt-50 man">
                         <img src="/resources/img/man-doc.jpg" alt="" loading="lazy">
                   </div>
-                  <div class="col-lg-5 d-flex flex-wrap align-content-end">
+                  <div class="col-lg-5 d-flex flex-wrap align-content-end dogovor-text">
                         <h2 class="mb-40">ОФИЦИАЛЬНЫЙ ДОГОВОР</h2>
                         <p class="mb-90 text-18">На нашем производстве мы готовы произвести мебель для любых потребностей как для частных домов и квартир, так и для помещений коммерческого использования.</p>
-                        <div class="d-flex justify-content-end w-100"><img src="/resources/img/pechat.png" alt="" loading="lazy"></div>
+                        <div class="d-none d-lg-flex justify-content-end w-100"><img src="/resources/img/pechat.png" alt="" loading="lazy"></div>
                   </div>
             </div>
       </div>
@@ -131,18 +131,18 @@
                         <div class="col-lg-3">
 
                         </div>
-                        <div class="col-lg-3 d-flex align-items-center">
+                        <div class="col-lg-3 d-flex align-items-center garant-body">
                               <div class="">
                                     <div class="white-head-cta text-uppercase">
                                           ГАРАНТИЯ
                                     </div>
-                                    <div class="white-text-cta text-uppercase">
+                                    <div class="white-text-cta text-uppercase ">
                                           на мебель
                                     </div>
                               </div>
 
                         </div>
-                        <div class="col-lg-3 text-yellow d-flex align-items-center text-uppercase">
+                        <div class="col-lg-3 text-yellow d-flex align-items-center text-uppercase garant-body">
                               <span class="garant-10">10</span><span class="garant-year">лет</span>
                         </div>
                         <div class="col-lg-3">
@@ -169,7 +169,7 @@
       <div class="container mt-90 mb-90">
             <h2 class="mb-70">ОТЗЫВЫ КЛИЕНТОВ</h2>
         <?php foreach ($all_review as $review): ?>
-          <div class="col-lg-10 review-card d-flex mb-40">
+          <div class="row review-card d-flex mb-40 mr-15p">
             <div class="col-lg-3 review-img">
               <img class="img-fluid review-img" src="/resources/img/review/<?=$review['img'];?>.jpg" alt="">
             </div>
@@ -228,7 +228,7 @@
                               <button type="button" name="button" class="btn btn-yellow" onclick="headerPopup()">ПОДРОБНЕЕ</button>
                         </div>
 
-                        <img class="img-fluid" src="/resources/img/akciya.jpg" alt="" loading="lazy">
+                        <img class="img-fluid img-w-100" src="/resources/img/akciya.jpg" alt="" loading="lazy">
                   </div>
             </div>
       </div>
@@ -243,7 +243,10 @@
                   </div>
             </div>
             <div class="container d-flex justify-content-center partners-container">
-                  <div class="slider">
+                  <div class="col-1 d-flex align-items-center justify-content-start p-0">
+                        <button class="btn-prev"><</button>
+                  </div>
+                  <div class="slider  col-10">
                         <div class="slider-line">
                               <?php for ($j=1; $j < 6; $j++):?>
                                     <img class="img-partner" src="/resources/img/partners/0<?=$j;?>.png" alt="">
@@ -254,9 +257,12 @@
                         </div>
 
                   </div>
+                  <div class="col-1 d-flex align-items-center justify-content-end p-0">
+                        <button class="btn-next">></button>
+                  </div>
 
             </div>
-            <button class="btn-next">></button>
+
       </div>
 
 

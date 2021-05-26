@@ -14,7 +14,17 @@ body, h1 {
   font-family: "Raleway", "Arial", sans-serif;
 }
 
+body {
+
+  overflow-x: hidden;
+}
+
 .text-16{
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.text-16-14{
   font-size: 16px;
   line-height: 19px;
 }
@@ -43,7 +53,9 @@ body, h1 {
 }
 
 
-
+.mr-15p{
+  margin-right: 15%;
+}
 .mt-90{
   margin-top: 90px;
 }
@@ -182,6 +194,10 @@ button.btn-yellow:hover{
 
 .text-yellow{
   color: #FFCA00;
+}
+
+.text-lighte{
+  color: #DDD;
 }
 
 .white-head-cta{
@@ -698,6 +714,26 @@ img.img-fluid.img-material {
 }
 
 
+.btn-next, .btn-prev{
+  background: transparent;
+  border:none;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 0;
+  padding: 0px 10px;
+}
+.btn-prev:hover{
+  cursor: pointer;
+}
+.btn-next:hover{
+  cursor: pointer;
+}
+
+.partners-container{
+  padding: 0;
+}
+
+
 .img-partner{
   margin: 10px 20px;
 }
@@ -706,4 +742,260 @@ img.img-fluid.img-material {
 
 .man img {
   max-width: 100%;
+}
+
+
+
+
+
+@media (max-width:768px){
+  .text-16{
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .text-16-24{
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+
+  .text-18{
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .text-28{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+
+  .text-100{
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+  }
+
+
+
+  .mt-90{
+    margin-top: 60px;
+  }
+
+  .mb-90{
+    margin-bottom: 60px;
+  }
+
+  .mt-70{
+    margin-top: 50px;
+  }
+
+  .mb-70{
+    margin-bottom: 50px;
+  }
+
+  .mt-50{
+    margin-top: 40px;
+  }
+
+  .mb-50{
+    margin-bottom: 40px;
+  }
+
+  .mt-40{
+    margin-top: 30px;
+  }
+
+  .mb-40{
+    margin-bottom: 30px;
+  }
+
+
+
+  .pt-100{
+    padding-top: 70px;
+
+  }
+
+  .pb-100{
+    padding-bottom: 70px;
+  }
+
+  .pt-90{
+    padding-top: 60px;
+  }
+
+  .pb-90{
+    padding-bottom: 60px;
+  }
+
+  .pt-70{
+    padding-top: 50px;
+
+  }
+
+  .pb-70{
+    padding-bottom: 50px;
+  }
+
+
+
+  .m-reverse{
+    flex-direction: column-reverse;
+  }
+
+  .garant-body {
+    justify-content: center;
+  }
+
+  .img-w-100{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .advantages-title{
+    padding:0px 15px 30px;
+  }
+
+  .advantages{
+    padding-bottom: 40px;
+  }
+
+  .mr-15p{
+    margin-right: 0px;
+  }
+
+  .hello h2{
+    margin-top:30px;
+  }
+
+  .slider{
+    width: 90%;
+  }
+
+
+  .btn-black, .btn-yellow{
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .btn-yellow{
+    margin-right: 20px;
+  }
+
+  form#cta-form{
+    text-align: center;
+    margin-top:40px;
+  }
+
+  input#btn_submit{
+    margin-top: 20px;
+  }
+
+  .white-head-cta, .white-text-cta {
+    text-align: center;
+  }
+
+  ul.nav.nav-tab{
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .nav-tab li{
+    font-size: 16px;
+    margin-right: 15px;
+  }
+
+  .tabs{
+    padding-bottom: 50px;
+  }
+
+  .review-card{
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  .review-body{
+    padding: 30px 20px;
+  }
+
+  .review-img{
+    width: 100%;
+  }
+
+  .features{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 40px 30px 40px 30px;
+  }
+
+  .akciya-text{
+    margin-bottom: 40px;
+  }
+
+  .akciya{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+  }
+
+  .akciya img{
+    margin:0px !important;
+  }
+
+
+  .cta-body {
+    padding-bottom: 40px !important;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .cta-body p{
+    margin: 0px;
+    padding: 0px 30px;
+    text-align: center;
+
+  }
+
+
+  .popup-visible{
+    width: 80%;
+    left:10%;
+    padding: 20px 30px;
+  }
+
+
+  .dogovor-text{
+    margin-top: 70px;
+  }
+
+  .tabs-content {
+    /*overflow: hidden;*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap:0px;
+
+  }
+
+  img.img-fluid.img-material {
+    width: 28vw;
+    height: 28vw;
+  }
+  .material-title{
+    margin-bottom: 25px;
+  }
+
+  .header-phone{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .site-name{
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .text-16-14{
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

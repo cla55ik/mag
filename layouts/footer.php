@@ -3,8 +3,8 @@
 
     <footer id="footer">
       <div class="row header-wrapper">
-        <nav class=" navbar navbar-expand-lg container">
-          <div class="col-lg-3 nav-logo">
+        <div class=" navbar navbar-expand-lg container">
+          <div class="col-lg-3 col-4 nav-logo">
             <a href="/">
               <div class="text-yellow text-uppercase site-name">
                 маг
@@ -17,7 +17,7 @@
           <div class="">
 
           </div>
-          <div class="col-lg-9 text-yellow">
+          <div class="col-lg-9 col-8 text-yellow">
             <div class="header-phone">
               <a class="text-yellow" href="tel:+74732052626">+7 473 205 26 26</a>
             </div>
@@ -25,7 +25,16 @@
                 <a class="text-yellow" href="#footer" id="btn_popup" onclick="headerPopup()">заказать звонок</a>
               </div>
           </div>
-        </nav>
+        </div>
+        <div class="container ">
+          <div class="col-12 text-yellow pt-2">
+              ©1995  -  <?= date(Y); ?> Все права защищены.
+          </div>
+          <div class="col-12 text-lighte pt-1 text-16-14">
+            Оставляя на сайте свои контактные данные, Вы даете согласие на обработку своих персональных данных в соответствии с политикой конфиденциальности. Сайт не является публичной офертой и носит информационный характер.
+          </div>
+
+        </div>
       </div>
 
 
