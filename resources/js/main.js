@@ -81,11 +81,11 @@ $(document).ready(function(){
   function cutReview(){
   let limit = 350
   var texts = document.getElementsByClassName('review-text');
-  //console.log(texts)
+
   i=0;
   for(text of texts){
     let t = text.innerHTML;
-    //console.log(t);
+
     let l = t.length;
 
     if(l>limit){
@@ -107,12 +107,12 @@ $(document).ready(function(){
 
 
 function showText(i){
-  console.log(i);
+
   let elem = document.getElementById('hide' + i)
   let dots = document.getElementById('dots' + i)
   let btn = document.getElementById('showButton' + i)
   currentClass = elem.classList.item(0)
-  console.log(currentClass)
+
   if(currentClass === 'hide'){
     elem.classList.remove('hide')
     elem.classList.add('visible')
