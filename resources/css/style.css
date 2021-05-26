@@ -667,6 +667,23 @@ img.img-fluid.img-material {
   color: #1B3342;
 }
 
+.show-text{
+  float:right;
+
+}
+a.show-text{
+
+  color: #6B71FF !important;
+  border-bottom: 1px dashed #6B71FF;
+}
+
+
+a.show-text:hover{
+  cursor: pointer;
+}
+
+
+
 
 
 /* БЛОК CTA */
@@ -743,6 +760,16 @@ img.img-fluid.img-material {
 .man img {
   max-width: 100%;
 }
+
+
+
+
+
+
+/*************    MOBILE    ********************/
+/**********/
+/*********/
+
 
 
 
@@ -998,4 +1025,8 @@ img.img-fluid.img-material {
     font-size: 14px;
     line-height: 18px;
   }
+
+
+
+
 }

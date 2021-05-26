@@ -168,6 +168,7 @@
       <?php include_once($_SERVER['DOCUMENT_ROOT']. "/controller/reviewController.php"); ?>
       <div class="container mt-90 mb-90">
             <h2 class="mb-70">ОТЗЫВЫ КЛИЕНТОВ</h2>
+
         <?php foreach ($all_review as $review): ?>
           <div class="row review-card d-flex mb-40 mr-15p">
             <div class="col-lg-3 review-img">
@@ -176,20 +177,22 @@
             <div class="col-lg-9 review-body">
               <div class="">
                 <h3 class="text-18"><?=$review['name'];  ?></h3>
-                <p class="text-16-24"><?= $review['text']; ?></p>
+                <div class="d-flex type-review mb-4 mt-3">
+                 <div class="review-type">
+                   <span></span>
+                   <span><?=$review['type'];  ?></span>
+                 </div>
+                 <div class="review-price text-18 font-weight-bold">
+                   <?=$review['price']; ?>  ₽
+                 </div>
+               </div>
+                <p class="text-16-24 review-text"><?= $review['text']; ?></p>
               </div>
-              <div class="d-flex">
-                <div class="review-type">
-                  <span></span>
-                  <span><?=$review['type'];  ?></span>
-                </div>
-                <div class="review-price text-18 font-weight-bold">
-                  <?=$review['price']; ?>  ₽
-                </div>
-              </div>
+
 
             </div>
           </div>
+
         <?php endforeach; ?>
 
       </div>

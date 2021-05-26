@@ -75,3 +75,57 @@ $(document).ready(function(){
     }
     document.querySelector('.slider-line').style.left = offset + 'px';
   }
+
+  document.addEventListener("DOMContentLoaded", cutReview);
+
+  function cutReview(){
+  let limit = 350
+  var texts = document.getElementsByClassName('review-text');
+  //console.log(texts)
+  i=0;
+  for(text of texts){
+    let t = text.innerHTML;
+    //console.log(t);
+    let l = t.length;
+
+    if(l>limit){
+      let textVis = t.slice(0,limit)
+      let textHid = t.slice(limit, l)
+      //textVis = textVis + '...'
+      current = document.getElementsByClassName('review-text')[i]
+      current.classList.add('hide');
+      current.insertAdjacentHTML('afterend', '<p class="m-0">' + textVis + '<span id="dots' + i + '" class="visible">...</span><span id="hide' + i + '" class="hide">' + textHid + '</span></p><a class="show-text" id=showButton' + i + ' onclick="showText(' + i + ')">Далее</a>')
+
+    }
+
+
+
+    i++
+  }
+};
+
+
+
+function showText(i){
+  console.log(i);
+  let elem = document.getElementById('hide' + i)
+  let dots = document.getElementById('dots' + i)
+  let btn = document.getElementById('showButton' + i)
+  currentClass = elem.classList.item(0)
+  console.log(currentClass)
+  if(currentClass === 'hide'){
+    elem.classList.remove('hide')
+    elem.classList.add('visible')
+    dots.classList.remove('visible')
+    dots.classList.add('hide')
+    btn.innerHTML = 'Скрыть'
+  }else if(currentClass === 'visible'){
+    elem.classList.remove('visible')
+    elem.classList.add('hide')
+    dots.classList.remove('hide')
+    dots.classList.add('visible')
+    btn.innerHTML = 'Далее'
+
+  }
+
+}
