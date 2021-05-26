@@ -95,6 +95,15 @@ body, h1 {
   padding-bottom: 90px;
 }
 
+.pt-70{
+  padding-top: 70px;
+
+}
+
+.pb-70{
+  padding-bottom: 70px;
+}
+
 
 
 
@@ -116,6 +125,7 @@ button.btn-yellow{
   color: #000000;
   padding: 15px 35px;
   border: 0px;
+  border-radius: 0px;
 }
 
 button.btn-yellow:hover{
@@ -314,7 +324,7 @@ a.nav-item.nav-link:hover{
 
 /*CAROUSEL*/
 
-.item img {
+.owl-carousel .item img {
   min-width: 375px;
   min-height: 240px;
 
@@ -340,6 +350,15 @@ a.nav-item.nav-link:hover{
     padding-bottom: 40px;
     -webkit-transform: translate3d(0,0,0);
 }
+
+
+.owl2-carousel .owl-stage-outer {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    -webkit-transform: translate3d(0,0,0);
+}
+
 
 
 
@@ -630,4 +649,61 @@ img.img-fluid.img-material {
 
 .review-body p{
   color: #1B3342;
+}
+
+
+
+/* БЛОК CTA */
+
+.cta-body p{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin-right: 45%;
+  margin-bottom:80px;
+}
+
+
+.cta-container{
+  background-image: url('/resources/img/cta-back.jpg');
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+
+
+/* Партнеры CAROUSEL*/
+
+.img-partners{
+  width: 150px !important;
+}
+
+
+.slider {
+  width: 70%;
+  height: 75px;
+  margin: 30px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-line{
+  width: 750px;
+  height: 75px;
+
+  display: flex;
+  position: absolute;
+  transition: all ease .7s;
+
+}
+
+
+.img-partner{
+  margin: 10px 20px;
+}
+
+
+
+.man img {
+  max-width: 100%;
 }

@@ -15,9 +15,11 @@
     <!--Подключаем OWL corousel-->
     <link rel="stylesheet" href="/resources/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="/resources/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/resources/css/flexisel.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/resources/owlcarousel/owl.carousel.js"></script>
     <script src="/resources/js/main.js"></script>
+    <script src="/resources/js/jquery.flexisel.js"></script>
 
     <!-- favicon -->
     <link type="image/x-icon" rel="shortcut icon" href="/resources/img/favicon.svg">
@@ -32,7 +34,8 @@
     <header>
       <div class="row header-wrapper fixed-top">
         <nav class=" navbar navbar-expand-lg container">
-          <div class="col-lg-3 nav-logo">
+
+          <div class="col-lg-3 col-sm-12 nav-logo">
             <a href="/">
               <div class="text-yellow text-uppercase site-name">
                 маг
@@ -42,7 +45,7 @@
               </div>
             </a>
           </div>
-          <div class="collapse navbar-collapse col-lg-6 text-white d-flex justify-content-center" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse col-lg-6 col-sm-12 text-white " id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-item nav-link active" href=" ">Каталог<span class="sr-only">(current)</span></a>
               <a class="nav-item nav-link" href="#">О нас</a>

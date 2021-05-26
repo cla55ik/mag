@@ -13,7 +13,8 @@
                               <span>Опыт более 20 лет</span>
                         </div>
                         <div class="d-flex mt-40">
-                              <button type="button" name="button" class="btn-yellow mr-5">ПОДРОБНЕЕ</button>
+
+                              <button type="button" name="button" class="btn btn-yellow mr-5" onclick="headerPopup()">ПОДРОБНЕЕ</button>
                               <button type="button" name="button" class="btn-black">КАТАЛОГ</button>
                         </div>
                   </div>
@@ -38,7 +39,7 @@
                               <p>К своим заказчикам я отношусь как к хорошим друзьям, а друзьям мы делаем только лучшее</p>
                         </div>
                   </div>
-                  <div class="col-lg-7">
+                  <div class="col-lg-7 man">
                         <img src="../resources/img/man.png" alt="" loading="lazy">
                   </div>
             </div>
@@ -221,9 +222,10 @@
                         </p>
                   </div>
                   <div class="col-lg-3 white akciya d-flex flex-wrap">
-                        <div class="akciya-text text-center mt-90 w-100">
+                        <div class="akciya-text text-center mt-90 w-100 ">
                               <h3>СБОРКА<br>В ПОДАРОК</h3>
                               <p>при заказе в мае</p>
+                              <button type="button" name="button" class="btn btn-yellow" onclick="headerPopup()">ПОДРОБНЕЕ</button>
                         </div>
 
                         <img class="img-fluid" src="/resources/img/akciya.jpg" alt="" loading="lazy">
@@ -231,11 +233,45 @@
             </div>
       </div>
       <!-- Партнеры -->
+      <div class="container mb-90">
+            <div class="row mt-90 mb-90">
+                  <div class="d-flex align-items-center col-lg-3 text-uppercase font-weight-bold">
+                        <h2>Наши<br>партнеры</h2>
+                  </div>
+                  <div class="col-lg-9 d-flex align-items-center text-18 font-weight-normal">
+                        Выбирая партнеров по поставкам комплектующих, фурнитуры и материалов для изготовления мебели на заказ мы проверили многие десятки компаний и остановили свой выбор только на лучших. Оптимальный баланс цены и качества, компоненты, проверенные годами сотрудничества. Мы уверены, что именно эта продукция должна занять место в вашем доме.
+                  </div>
+            </div>
+            <div class="container d-flex justify-content-center partners-container">
+                  <div class="slider">
+                        <div class="slider-line">
+                              <?php for ($j=1; $j < 6; $j++):?>
+                                    <img class="img-partner" src="/resources/img/partners/0<?=$j;?>.png" alt="">
+                              <?php endfor; ?>
+                              <?php for ($j=1; $j < 6; $j++):?>
+                                    <img class="img-partner" src="/resources/img/partners/0<?=$j;?>.png" alt="">
+                              <?php endfor; ?>
+                        </div>
 
+                  </div>
+
+            </div>
+            <button class="btn-next">></button>
+      </div>
 
 
 
       <!-- CTA -->
+      <div class="row cta-container">
+            <div class="col-lg-6">
+
+            </div>
+            <div class="col-lg-6 cta-body pt-70 pb-70 d-flex flex-wrap align-items-center justify-content-start">
+                  <p>Закажите выезд дизайнера на&nbsp;дом прямо сейчас и&nbsp;получите скидку до&nbsp;30%
+                  </p>
+                  <?php include($_SERVER['DOCUMENT_ROOT']. "/templates/formCTA.php"); ?>
+            </div>
+      </div>
 
 </div>
 
@@ -245,6 +281,10 @@
       $(".owl-carousel").owlCarousel();
       });
 </script>
+
+
+
+
 
 
 <script src="/resources/js/owl-main.js"></script>
