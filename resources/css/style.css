@@ -1,17 +1,19 @@
 @font-face {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src: local("Raleway"),
-       url("/recources/fonts/Raleway-Regular.ttf") format("ttf");
+  font-display: swap;
+  src: local('Raleway Regular'), local('Raleway-Regular'),
+       url('/resources/fonts/Raleway-Regular.ttf') format('ttf'),
+
 }
 
 
 
-font-family: 'Raleway', sans-serif;
 
-body, h1 {
-  font-family: "Raleway", "Arial", sans-serif;
+
+body {
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
