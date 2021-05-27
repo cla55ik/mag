@@ -1,0 +1,2 @@
+Options -Indexes
+ErrorDocument 403 http://test.siteforyou.ru.com/
