@@ -1,7 +1,8 @@
 
 
 .ftpconfig
-
+.vscode
+/config
 
 # phpstorm project files
 .idea
